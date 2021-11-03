@@ -419,6 +419,7 @@ namespace ScientificCalculator_OOP
             // 
             // btn2nd
             // 
+            this.btn2nd.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn2nd.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2nd.Location = new System.Drawing.Point(7, 162);
             this.btn2nd.Margin = new System.Windows.Forms.Padding(1);
@@ -426,7 +427,7 @@ namespace ScientificCalculator_OOP
             this.btn2nd.Size = new System.Drawing.Size(57, 38);
             this.btn2nd.TabIndex = 31;
             this.btn2nd.Text = "2nd";
-            this.btn2nd.UseVisualStyleBackColor = true;
+            this.btn2nd.UseVisualStyleBackColor = false;
             // 
             // btnPi
             // 
@@ -474,6 +475,7 @@ namespace ScientificCalculator_OOP
             // 
             // btnMC
             // 
+            this.btnMC.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnMC.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMC.Location = new System.Drawing.Point(7, 133);
             this.btnMC.Margin = new System.Windows.Forms.Padding(1);
@@ -481,10 +483,11 @@ namespace ScientificCalculator_OOP
             this.btnMC.Size = new System.Drawing.Size(57, 27);
             this.btnMC.TabIndex = 36;
             this.btnMC.Text = "MC";
-            this.btnMC.UseVisualStyleBackColor = true;
+            this.btnMC.UseVisualStyleBackColor = false;
             // 
             // btnMR
             // 
+            this.btnMR.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnMR.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMR.Location = new System.Drawing.Point(66, 133);
             this.btnMR.Margin = new System.Windows.Forms.Padding(1);
@@ -492,10 +495,11 @@ namespace ScientificCalculator_OOP
             this.btnMR.Size = new System.Drawing.Size(57, 27);
             this.btnMR.TabIndex = 37;
             this.btnMR.Text = "MR";
-            this.btnMR.UseVisualStyleBackColor = true;
+            this.btnMR.UseVisualStyleBackColor = false;
             // 
             // btnMp
             // 
+            this.btnMp.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnMp.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMp.Location = new System.Drawing.Point(125, 133);
             this.btnMp.Margin = new System.Windows.Forms.Padding(1);
@@ -503,10 +507,11 @@ namespace ScientificCalculator_OOP
             this.btnMp.Size = new System.Drawing.Size(57, 27);
             this.btnMp.TabIndex = 38;
             this.btnMp.Text = "M+";
-            this.btnMp.UseVisualStyleBackColor = true;
+            this.btnMp.UseVisualStyleBackColor = false;
             // 
             // btnMm
             // 
+            this.btnMm.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnMm.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMm.Location = new System.Drawing.Point(184, 133);
             this.btnMm.Margin = new System.Windows.Forms.Padding(1);
@@ -514,10 +519,11 @@ namespace ScientificCalculator_OOP
             this.btnMm.Size = new System.Drawing.Size(57, 27);
             this.btnMm.TabIndex = 39;
             this.btnMm.Text = "M-";
-            this.btnMm.UseVisualStyleBackColor = true;
+            this.btnMm.UseVisualStyleBackColor = false;
             // 
             // btnMS
             // 
+            this.btnMS.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnMS.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMS.Location = new System.Drawing.Point(243, 133);
             this.btnMS.Margin = new System.Windows.Forms.Padding(1);
@@ -525,7 +531,7 @@ namespace ScientificCalculator_OOP
             this.btnMS.Size = new System.Drawing.Size(57, 27);
             this.btnMS.TabIndex = 40;
             this.btnMS.Text = "MS";
-            this.btnMS.UseVisualStyleBackColor = true;
+            this.btnMS.UseVisualStyleBackColor = false;
             // 
             // btnDRG
             // 
@@ -567,7 +573,7 @@ namespace ScientificCalculator_OOP
             this.txtDisplay.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtDisplay.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDisplay.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtDisplay.ForeColor = System.Drawing.SystemColors.MenuText;
             this.txtDisplay.Location = new System.Drawing.Point(7, 45);
             this.txtDisplay.Multiline = true;
             this.txtDisplay.Name = "txtDisplay";
