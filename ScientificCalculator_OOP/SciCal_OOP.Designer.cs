@@ -72,6 +72,7 @@ namespace ScientificCalculator_OOP
             this.btnFE = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
             this.txtDisplay = new System.Windows.Forms.TextBox();
+            this.LabelName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn8
@@ -563,9 +564,10 @@ namespace ScientificCalculator_OOP
             // 
             // txtDisplay
             // 
-            this.txtDisplay.BackColor = System.Drawing.SystemColors.Control;
-            this.txtDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDisplay.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtDisplay.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisplay.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtDisplay.Location = new System.Drawing.Point(7, 45);
             this.txtDisplay.Multiline = true;
             this.txtDisplay.Name = "txtDisplay";
@@ -574,12 +576,25 @@ namespace ScientificCalculator_OOP
             this.txtDisplay.Text = "0";
             this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // LabelName
+            // 
+            this.LabelName.AutoSize = true;
+            this.LabelName.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelName.Font = new System.Drawing.Font("Franklin Gothic Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelName.Location = new System.Drawing.Point(7, 6);
+            this.LabelName.Name = "LabelName";
+            this.LabelName.Size = new System.Drawing.Size(134, 34);
+            this.LabelName.TabIndex = 44;
+            this.LabelName.Text = "Scientific";
+            this.LabelName.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(307, 446);
+            this.Controls.Add(this.LabelName);
             this.Controls.Add(this.txtDisplay);
             this.Controls.Add(this.btnFE);
             this.Controls.Add(this.btnDRG);
@@ -675,6 +690,7 @@ namespace ScientificCalculator_OOP
         private System.Windows.Forms.Button btnFE;
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.TextBox txtDisplay;
+        private System.Windows.Forms.Label LabelName;
     }
 }
 
