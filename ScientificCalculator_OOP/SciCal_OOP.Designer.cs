@@ -71,7 +71,7 @@ namespace ScientificCalculator_OOP
             this.btnDRG = new System.Windows.Forms.Button();
             this.btnFE = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
-            this.txtDisplay = new System.Windows.Forms.TextBox();
+            this.txtbxDisplay = new System.Windows.Forms.TextBox();
             this.LabelName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -568,19 +568,19 @@ namespace ScientificCalculator_OOP
             this.btn7.UseVisualStyleBackColor = false;
             this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
-            // txtDisplay
+            // txtbxDisplay
             // 
-            this.txtDisplay.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtDisplay.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDisplay.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtDisplay.Location = new System.Drawing.Point(7, 45);
-            this.txtDisplay.Multiline = true;
-            this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.Size = new System.Drawing.Size(293, 55);
-            this.txtDisplay.TabIndex = 43;
-            this.txtDisplay.Text = "0";
-            this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbxDisplay.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtbxDisplay.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxDisplay.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.txtbxDisplay.Location = new System.Drawing.Point(7, 45);
+            this.txtbxDisplay.Multiline = true;
+            this.txtbxDisplay.Name = "txtbxDisplay";
+            this.txtbxDisplay.Size = new System.Drawing.Size(293, 55);
+            this.txtbxDisplay.TabIndex = 43;
+            this.txtbxDisplay.Text = "0";
+            this.txtbxDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LabelName
             // 
@@ -601,7 +601,7 @@ namespace ScientificCalculator_OOP
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(307, 446);
             this.Controls.Add(this.LabelName);
-            this.Controls.Add(this.txtDisplay);
+            this.Controls.Add(this.txtbxDisplay);
             this.Controls.Add(this.btnFE);
             this.Controls.Add(this.btnDRG);
             this.Controls.Add(this.btnMS);
@@ -695,7 +695,7 @@ namespace ScientificCalculator_OOP
         private System.Windows.Forms.Button btnDRG;
         private System.Windows.Forms.Button btnFE;
         private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.TextBox txtDisplay;
+        private System.Windows.Forms.TextBox txtbxDisplay;
         private System.Windows.Forms.Label LabelName;
     }
 }

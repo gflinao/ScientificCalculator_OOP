@@ -34,17 +34,31 @@ namespace ScientificCalculator_OOP
 
         private void btn7_Click(object sender, EventArgs e)
         {
+            if (txtbxDisplay.Text == "0")
+            {
+                txtbxDisplay.Text = "";
+            }
 
+            txtbxDisplay.Text = txtbxDisplay.Text + "7";
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
+            if (txtbxDisplay.Text == "0")
+            {
+                txtbxDisplay.Text = "";
+            }
 
-        }
+            txtbxDisplay.Text = txtbxDisplay.Text + "8";        }
 
         private void btn9_Click(object sender, EventArgs e)
         {
+            if (txtbxDisplay.Text == "0")
+            {
+                txtbxDisplay.Text = "";
+            }
 
+            txtbxDisplay.Text = txtbxDisplay.Text + "9";
         }
 
         private void btn6_Click(object sender, EventArgs e)
