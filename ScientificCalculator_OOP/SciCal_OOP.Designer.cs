@@ -227,6 +227,7 @@ namespace ScientificCalculator_OOP
             this.btnln.TabIndex = 12;
             this.btnln.Text = "ln";
             this.btnln.UseVisualStyleBackColor = true;
+            this.btnln.Click += new System.EventHandler(this.btnln_Click);
             // 
             // btn10x
             // 
@@ -329,6 +330,7 @@ namespace ScientificCalculator_OOP
             this.btnEql.TabIndex = 22;
             this.btnEql.Text = "=";
             this.btnEql.UseVisualStyleBackColor = true;
+            this.btnEql.Click += new System.EventHandler(this.btnEql_Click);
             // 
             // btnAdd
             // 
@@ -363,6 +365,7 @@ namespace ScientificCalculator_OOP
             this.btnMul.TabIndex = 25;
             this.btnMul.Text = "×";
             this.btnMul.UseVisualStyleBackColor = true;
+            this.btnMul.Click += new System.EventHandler(this.btnMul_Click);
             // 
             // btnXr2
             // 
@@ -431,6 +434,7 @@ namespace ScientificCalculator_OOP
             this.btn2nd.TabIndex = 31;
             this.btn2nd.Text = "2nd";
             this.btn2nd.UseVisualStyleBackColor = false;
+            this.btn2nd.Click += new System.EventHandler(this.btn2nd_Click);
             // 
             // btnPi
             // 

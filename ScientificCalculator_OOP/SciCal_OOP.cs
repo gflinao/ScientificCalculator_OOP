@@ -103,7 +103,12 @@ namespace ScientificCalculator_OOP
 
         private void btnDOT_Click(object sender, EventArgs e)
         {
+            if (txtbxDisplay.Text == "0")
+            {
+                txtbxDisplay.Text = "";
+            }
 
+            txtbxDisplay.Text = txtbxDisplay.Text + ".";
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -164,6 +169,26 @@ namespace ScientificCalculator_OOP
             }
 
             txtbxDisplay.Text = txtbxDisplay.Text + "0";
+        }
+
+        private void btn2nd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMul_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnln_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEql_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
