@@ -112,6 +112,7 @@ namespace ScientificCalculator_OOP
             this.btn1.TabIndex = 3;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn6
             // 
@@ -189,6 +190,7 @@ namespace ScientificCalculator_OOP
             this.btn0.TabIndex = 9;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btnPosNeg
             // 

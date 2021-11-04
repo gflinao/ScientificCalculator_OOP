@@ -24,7 +24,12 @@ namespace ScientificCalculator_OOP
 
         private void btn3_Click(object sender, EventArgs e)
         {
+            if (txtbxDisplay.Text == "0")
+            {
+                txtbxDisplay.Text = "";
+            }
 
+            txtbxDisplay.Text = txtbxDisplay.Text + "3";
         }
 
         private void btn4_Click(object sender, EventArgs e)
@@ -78,7 +83,12 @@ namespace ScientificCalculator_OOP
 
         private void btn2_Click(object sender, EventArgs e)
         {
+            if (txtbxDisplay.Text == "0")
+            {
+                txtbxDisplay.Text = "";
+            }
 
+            txtbxDisplay.Text = txtbxDisplay.Text + "2";
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -134,6 +144,26 @@ namespace ScientificCalculator_OOP
             }
 
             txtbxDisplay.Text = txtbxDisplay.Text + "5";
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            if (txtbxDisplay.Text == "0")
+            {
+                txtbxDisplay.Text = "";
+            }
+
+            txtbxDisplay.Text = txtbxDisplay.Text + "1";
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            if (txtbxDisplay.Text == "0")
+            {
+                txtbxDisplay.Text = "";
+            }
+
+            txtbxDisplay.Text = txtbxDisplay.Text + "0";
         }
     }
 }
