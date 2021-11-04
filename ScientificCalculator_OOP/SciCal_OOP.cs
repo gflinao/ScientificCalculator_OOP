@@ -190,5 +190,10 @@ namespace ScientificCalculator_OOP
         {
 
         }
+
+        private void btnClr_Click(object sender, EventArgs e)
+        {
+            txtbxDisplay.Text = txtbxDisplay.Text.Substring(0, txtbxDisplay.Text.Length - 1);
+        }
     }
 }

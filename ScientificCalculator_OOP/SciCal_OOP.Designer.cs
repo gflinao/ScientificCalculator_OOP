@@ -479,6 +479,7 @@ namespace ScientificCalculator_OOP
             this.btnClr.TabIndex = 35;
             this.btnClr.Text = "←";
             this.btnClr.UseVisualStyleBackColor = true;
+            this.btnClr.Click += new System.EventHandler(this.btnClr_Click);
             // 
             // btnMC
             // 
