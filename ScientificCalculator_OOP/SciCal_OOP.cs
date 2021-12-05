@@ -120,12 +120,22 @@ namespace ScientificCalculator_OOP
 
         private void button5_Click(object sender, EventArgs e)
         {
+            if (txtbxDisplay.Text == "0")
+            {
+                txtbxDisplay.Text = "";
+            }
 
+            txtbxDisplay.Text = txtbxDisplay.Text + "(";
         }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
+            if (txtbxDisplay.Text == "0")
+            {
+                txtbxDisplay.Text = "";
+            }
 
+            txtbxDisplay.Text = txtbxDisplay.Text + "7";
         }
 
         private void button1_Click(object sender, EventArgs e)
