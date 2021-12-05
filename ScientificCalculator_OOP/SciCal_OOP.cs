@@ -238,6 +238,12 @@ namespace ScientificCalculator_OOP
             txtbxDisplay.Text = result.ToString();
         }
 
+        private void btnPi_Click(object sender, EventArgs e)
+        {
+            result = Math.PI;
+            txtbxDisplay.Text = result.ToString();
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
              
