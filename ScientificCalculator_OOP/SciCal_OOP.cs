@@ -223,7 +223,9 @@ namespace ScientificCalculator_OOP
 
         private void btnXr2_Click(object sender, EventArgs e)
         {
-
+            result = double.Parse(txtbxDisplay.Text);
+            result = Math.Pow(result, 2);
+            txtbxDisplay.Text = result.ToString();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
