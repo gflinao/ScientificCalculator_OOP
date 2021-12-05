@@ -198,7 +198,13 @@ namespace ScientificCalculator_OOP
 
         private void btnClr_Click(object sender, EventArgs e)
         {
-            txtbxDisplay.Text = txtbxDisplay.Text.Substring(0, txtbxDisplay.Text.Length - 1);
+            int index = txtbxDisplay.Text.Length;
+            index--;
+            txtbxDisplay.Text = txtbxDisplay.Text.Remove(index);
+            if (txtbxDisplay.Text == "")
+            {
+                txtbxDisplay.Text = "0";
+            }
         }
 
         private void btnCE_Click(object sender, EventArgs e)
@@ -208,10 +214,7 @@ namespace ScientificCalculator_OOP
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            num1 = float.Parse(txtbxDisplay.Text);
-            txtbxDisplay.Clear();
-            txtbxDisplay.Focus();
-            count = 2;
+             
         }
     }
 }
