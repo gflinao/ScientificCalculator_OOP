@@ -342,6 +342,7 @@ namespace ScientificCalculator_OOP
             this.btnAdd.TabIndex = 23;
             this.btnAdd.Text = "＋";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnSub
             // 
@@ -468,6 +469,7 @@ namespace ScientificCalculator_OOP
             this.btnCE.TabIndex = 34;
             this.btnCE.Text = "CE";
             this.btnCE.UseVisualStyleBackColor = true;
+            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
             // 
             // btnClr
             // 

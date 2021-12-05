@@ -17,6 +17,9 @@ namespace ScientificCalculator_OOP
             InitializeComponent();
         }
 
+        float num1, ans;
+        int count;
+
         private void Calculator_Load(object sender, EventArgs e)
         {
 
@@ -30,6 +33,8 @@ namespace ScientificCalculator_OOP
             }
 
             txtbxDisplay.Text = txtbxDisplay.Text + "3";
+
+            txtbxDisplay.Text = txtbxDisplay.Text + 3;
         }
 
         private void btn4_Click(object sender, EventArgs e)
@@ -194,6 +199,19 @@ namespace ScientificCalculator_OOP
         private void btnClr_Click(object sender, EventArgs e)
         {
             txtbxDisplay.Text = txtbxDisplay.Text.Substring(0, txtbxDisplay.Text.Length - 1);
+        }
+
+        private void btnCE_Click(object sender, EventArgs e)
+        {
+            txtbxDisplay.Text = "0";
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            num1 = float.Parse(txtbxDisplay.Text);
+            txtbxDisplay.Clear();
+            txtbxDisplay.Focus();
+            count = 2;
         }
     }
 }
