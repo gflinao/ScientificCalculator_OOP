@@ -135,7 +135,7 @@ namespace ScientificCalculator_OOP
                 txtbxDisplay.Text = "";
             }
 
-            txtbxDisplay.Text = txtbxDisplay.Text + "7";
+            txtbxDisplay.Text = txtbxDisplay.Text + ")";
         }
 
         private void button1_Click(object sender, EventArgs e)
