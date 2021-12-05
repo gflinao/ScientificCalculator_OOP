@@ -12,6 +12,8 @@ namespace ScientificCalculator_OOP
 {
     public partial class Calculator : Form
     {
+        double result;
+
         public Calculator()
         {
             InitializeComponent();
@@ -210,6 +212,18 @@ namespace ScientificCalculator_OOP
         private void btnCE_Click(object sender, EventArgs e)
         {
             txtbxDisplay.Text = "0";
+        }
+
+        private void btnPosNeg_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(txtbxDisplay.Text);
+            result = result * -1;
+            txtbxDisplay.Text = result.ToString();
+        }
+
+        private void btnXr2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

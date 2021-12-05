@@ -203,6 +203,7 @@ namespace ScientificCalculator_OOP
             this.btnPosNeg.TabIndex = 10;
             this.btnPosNeg.Text = "+/-";
             this.btnPosNeg.UseVisualStyleBackColor = false;
+            this.btnPosNeg.Click += new System.EventHandler(this.btnPosNeg_Click);
             // 
             // btnDOT
             // 
@@ -378,6 +379,7 @@ namespace ScientificCalculator_OOP
             this.btnXr2.TabIndex = 26;
             this.btnXr2.Text = "x^2";
             this.btnXr2.UseVisualStyleBackColor = true;
+            this.btnXr2.Click += new System.EventHandler(this.btnXr2_Click);
             // 
             // btnAbs
             // 
