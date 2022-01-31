@@ -41,15 +41,8 @@ namespace ScientificCalculator_OOP
             this.btnPosNeg = new System.Windows.Forms.Button();
             this.btnDOT = new System.Windows.Forms.Button();
             this.btnln = new System.Windows.Forms.Button();
-            this.btn10x = new System.Windows.Forms.Button();
-            this.btnLog = new System.Windows.Forms.Button();
             this.btnDiv = new System.Windows.Forms.Button();
-            this.btnNi = new System.Windows.Forms.Button();
-            this.btnPrnthsR = new System.Windows.Forms.Button();
-            this.btnPrnthsL = new System.Windows.Forms.Button();
             this.btn2SQ = new System.Windows.Forms.Button();
-            this.btnxY = new System.Windows.Forms.Button();
-            this.btnEql = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnSub = new System.Windows.Forms.Button();
             this.btnMul = new System.Windows.Forms.Button();
@@ -58,21 +51,16 @@ namespace ScientificCalculator_OOP
             this.btnExp = new System.Windows.Forms.Button();
             this.btn1oX = new System.Windows.Forms.Button();
             this.btnMod = new System.Windows.Forms.Button();
-            this.btn2nd = new System.Windows.Forms.Button();
             this.btnPi = new System.Windows.Forms.Button();
             this.btne = new System.Windows.Forms.Button();
             this.btnCE = new System.Windows.Forms.Button();
             this.btnClr = new System.Windows.Forms.Button();
-            this.btnMC = new System.Windows.Forms.Button();
-            this.btnMR = new System.Windows.Forms.Button();
-            this.btnMp = new System.Windows.Forms.Button();
-            this.btnMm = new System.Windows.Forms.Button();
-            this.btnMS = new System.Windows.Forms.Button();
-            this.btnDRG = new System.Windows.Forms.Button();
-            this.btnFE = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
-            this.txtbxDisplay = new System.Windows.Forms.TextBox();
             this.LabelName = new System.Windows.Forms.Label();
+            this.lblOP = new System.Windows.Forms.Label();
+            this.txtbxDisplay = new System.Windows.Forms.TextBox();
+            this.btnEqual = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn8
@@ -86,7 +74,7 @@ namespace ScientificCalculator_OOP
             this.btn8.TabIndex = 1;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
-            this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            this.btn8.Click += new System.EventHandler(this.btnNumOP_Click);
             // 
             // btn9
             // 
@@ -99,7 +87,7 @@ namespace ScientificCalculator_OOP
             this.btn9.TabIndex = 2;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            this.btn9.Click += new System.EventHandler(this.btnNumOP_Click);
             // 
             // btn1
             // 
@@ -112,7 +100,7 @@ namespace ScientificCalculator_OOP
             this.btn1.TabIndex = 3;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btn1.Click += new System.EventHandler(this.btnNumOP_Click);
             // 
             // btn6
             // 
@@ -125,7 +113,7 @@ namespace ScientificCalculator_OOP
             this.btn6.TabIndex = 4;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
-            this.btn6.Click += new System.EventHandler(this.btn6_Click);
+            this.btn6.Click += new System.EventHandler(this.btnNumOP_Click);
             // 
             // btn5
             // 
@@ -138,7 +126,7 @@ namespace ScientificCalculator_OOP
             this.btn5.TabIndex = 5;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
-            this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            this.btn5.Click += new System.EventHandler(this.btnNumOP_Click);
             // 
             // btn4
             // 
@@ -151,7 +139,7 @@ namespace ScientificCalculator_OOP
             this.btn4.TabIndex = 6;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
-            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            this.btn4.Click += new System.EventHandler(this.btnNumOP_Click);
             // 
             // btn3
             // 
@@ -164,7 +152,7 @@ namespace ScientificCalculator_OOP
             this.btn3.TabIndex = 7;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            this.btn3.Click += new System.EventHandler(this.btnNumOP_Click);
             // 
             // btn2
             // 
@@ -177,7 +165,7 @@ namespace ScientificCalculator_OOP
             this.btn2.TabIndex = 8;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btn2.Click += new System.EventHandler(this.btnNumOP_Click);
             // 
             // btn0
             // 
@@ -190,13 +178,13 @@ namespace ScientificCalculator_OOP
             this.btn0.TabIndex = 9;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
-            this.btn0.Click += new System.EventHandler(this.btn0_Click);
+            this.btn0.Click += new System.EventHandler(this.btnNumOP_Click);
             // 
             // btnPosNeg
             // 
             this.btnPosNeg.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnPosNeg.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPosNeg.Location = new System.Drawing.Point(66, 402);
+            this.btnPosNeg.Location = new System.Drawing.Point(66, 403);
             this.btnPosNeg.Margin = new System.Windows.Forms.Padding(1);
             this.btnPosNeg.Name = "btnPosNeg";
             this.btnPosNeg.Size = new System.Drawing.Size(57, 38);
@@ -216,7 +204,7 @@ namespace ScientificCalculator_OOP
             this.btnDOT.TabIndex = 11;
             this.btnDOT.Text = ".";
             this.btnDOT.UseVisualStyleBackColor = false;
-            this.btnDOT.Click += new System.EventHandler(this.btnDOT_Click);
+            this.btnDOT.Click += new System.EventHandler(this.btnNumOP_Click);
             // 
             // btnln
             // 
@@ -230,28 +218,6 @@ namespace ScientificCalculator_OOP
             this.btnln.UseVisualStyleBackColor = true;
             this.btnln.Click += new System.EventHandler(this.btnln_Click);
             // 
-            // btn10x
-            // 
-            this.btn10x.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn10x.Location = new System.Drawing.Point(7, 322);
-            this.btn10x.Margin = new System.Windows.Forms.Padding(1);
-            this.btn10x.Name = "btn10x";
-            this.btn10x.Size = new System.Drawing.Size(57, 38);
-            this.btn10x.TabIndex = 14;
-            this.btn10x.Text = "10^x";
-            this.btn10x.UseVisualStyleBackColor = true;
-            // 
-            // btnLog
-            // 
-            this.btnLog.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLog.Location = new System.Drawing.Point(7, 362);
-            this.btnLog.Margin = new System.Windows.Forms.Padding(1);
-            this.btnLog.Name = "btnLog";
-            this.btnLog.Size = new System.Drawing.Size(57, 38);
-            this.btnLog.TabIndex = 15;
-            this.btnLog.Text = "log";
-            this.btnLog.UseVisualStyleBackColor = true;
-            // 
             // btnDiv
             // 
             this.btnDiv.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -262,76 +228,18 @@ namespace ScientificCalculator_OOP
             this.btnDiv.TabIndex = 16;
             this.btnDiv.Text = "÷";
             this.btnDiv.UseVisualStyleBackColor = true;
-            this.btnDiv.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnNi
-            // 
-            this.btnNi.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNi.Location = new System.Drawing.Point(184, 242);
-            this.btnNi.Margin = new System.Windows.Forms.Padding(1);
-            this.btnNi.Name = "btnNi";
-            this.btnNi.Size = new System.Drawing.Size(57, 38);
-            this.btnNi.TabIndex = 17;
-            this.btnNi.Text = "n!";
-            this.btnNi.UseVisualStyleBackColor = true;
-            // 
-            // btnPrnthsR
-            // 
-            this.btnPrnthsR.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrnthsR.Location = new System.Drawing.Point(125, 242);
-            this.btnPrnthsR.Margin = new System.Windows.Forms.Padding(1);
-            this.btnPrnthsR.Name = "btnPrnthsR";
-            this.btnPrnthsR.Size = new System.Drawing.Size(57, 38);
-            this.btnPrnthsR.TabIndex = 18;
-            this.btnPrnthsR.Text = ")";
-            this.btnPrnthsR.UseVisualStyleBackColor = true;
-            this.btnPrnthsR.Click += new System.EventHandler(this.button4_Click_1);
-            // 
-            // btnPrnthsL
-            // 
-            this.btnPrnthsL.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrnthsL.Location = new System.Drawing.Point(66, 242);
-            this.btnPrnthsL.Margin = new System.Windows.Forms.Padding(1);
-            this.btnPrnthsL.Name = "btnPrnthsL";
-            this.btnPrnthsL.Size = new System.Drawing.Size(57, 38);
-            this.btnPrnthsL.TabIndex = 19;
-            this.btnPrnthsL.Text = "(";
-            this.btnPrnthsL.UseVisualStyleBackColor = true;
-            this.btnPrnthsL.Click += new System.EventHandler(this.button5_Click);
+            this.btnDiv.Click += new System.EventHandler(this.ArithOP_Click);
             // 
             // btn2SQ
             // 
             this.btn2SQ.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2SQ.Location = new System.Drawing.Point(7, 242);
+            this.btn2SQ.Location = new System.Drawing.Point(7, 202);
             this.btn2SQ.Margin = new System.Windows.Forms.Padding(1);
             this.btn2SQ.Name = "btn2SQ";
             this.btn2SQ.Size = new System.Drawing.Size(57, 38);
             this.btn2SQ.TabIndex = 20;
             this.btn2SQ.Text = "2√";
             this.btn2SQ.UseVisualStyleBackColor = true;
-            // 
-            // btnxY
-            // 
-            this.btnxY.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxY.Location = new System.Drawing.Point(7, 282);
-            this.btnxY.Margin = new System.Windows.Forms.Padding(1);
-            this.btnxY.Name = "btnxY";
-            this.btnxY.Size = new System.Drawing.Size(57, 38);
-            this.btnxY.TabIndex = 21;
-            this.btnxY.Text = "x^y";
-            this.btnxY.UseVisualStyleBackColor = true;
-            // 
-            // btnEql
-            // 
-            this.btnEql.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEql.Location = new System.Drawing.Point(243, 402);
-            this.btnEql.Margin = new System.Windows.Forms.Padding(1);
-            this.btnEql.Name = "btnEql";
-            this.btnEql.Size = new System.Drawing.Size(57, 38);
-            this.btnEql.TabIndex = 22;
-            this.btnEql.Text = "=";
-            this.btnEql.UseVisualStyleBackColor = true;
-            this.btnEql.Click += new System.EventHandler(this.btnEql_Click);
             // 
             // btnAdd
             // 
@@ -343,7 +251,7 @@ namespace ScientificCalculator_OOP
             this.btnAdd.TabIndex = 23;
             this.btnAdd.Text = "＋";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.Click += new System.EventHandler(this.ArithOP_Click);
             // 
             // btnSub
             // 
@@ -355,7 +263,7 @@ namespace ScientificCalculator_OOP
             this.btnSub.TabIndex = 24;
             this.btnSub.Text = "－";
             this.btnSub.UseVisualStyleBackColor = true;
-            this.btnSub.Click += new System.EventHandler(this.button10_Click);
+            this.btnSub.Click += new System.EventHandler(this.ArithOP_Click);
             // 
             // btnMul
             // 
@@ -367,12 +275,12 @@ namespace ScientificCalculator_OOP
             this.btnMul.TabIndex = 25;
             this.btnMul.Text = "×";
             this.btnMul.UseVisualStyleBackColor = true;
-            this.btnMul.Click += new System.EventHandler(this.btnMul_Click);
+            this.btnMul.Click += new System.EventHandler(this.ArithOP_Click);
             // 
             // btnXr2
             // 
             this.btnXr2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXr2.Location = new System.Drawing.Point(7, 202);
+            this.btnXr2.Location = new System.Drawing.Point(7, 322);
             this.btnXr2.Margin = new System.Windows.Forms.Padding(1);
             this.btnXr2.Name = "btnXr2";
             this.btnXr2.Size = new System.Drawing.Size(57, 38);
@@ -384,19 +292,19 @@ namespace ScientificCalculator_OOP
             // btnAbs
             // 
             this.btnAbs.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbs.Location = new System.Drawing.Point(125, 202);
+            this.btnAbs.Location = new System.Drawing.Point(66, 242);
             this.btnAbs.Margin = new System.Windows.Forms.Padding(1);
             this.btnAbs.Name = "btnAbs";
             this.btnAbs.Size = new System.Drawing.Size(57, 38);
             this.btnAbs.TabIndex = 27;
-            this.btnAbs.Text = "|x|";
+            this.btnAbs.Text = "%";
             this.btnAbs.UseVisualStyleBackColor = true;
             this.btnAbs.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnExp
             // 
             this.btnExp.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExp.Location = new System.Drawing.Point(184, 202);
+            this.btnExp.Location = new System.Drawing.Point(125, 242);
             this.btnExp.Margin = new System.Windows.Forms.Padding(1);
             this.btnExp.Name = "btnExp";
             this.btnExp.Size = new System.Drawing.Size(57, 38);
@@ -407,7 +315,7 @@ namespace ScientificCalculator_OOP
             // btn1oX
             // 
             this.btn1oX.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1oX.Location = new System.Drawing.Point(66, 202);
+            this.btn1oX.Location = new System.Drawing.Point(7, 242);
             this.btn1oX.Margin = new System.Windows.Forms.Padding(1);
             this.btn1oX.Name = "btn1oX";
             this.btn1oX.Size = new System.Drawing.Size(57, 38);
@@ -418,7 +326,7 @@ namespace ScientificCalculator_OOP
             // btnMod
             // 
             this.btnMod.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMod.Location = new System.Drawing.Point(243, 202);
+            this.btnMod.Location = new System.Drawing.Point(184, 242);
             this.btnMod.Margin = new System.Windows.Forms.Padding(1);
             this.btnMod.Name = "btnMod";
             this.btnMod.Size = new System.Drawing.Size(57, 38);
@@ -426,23 +334,10 @@ namespace ScientificCalculator_OOP
             this.btnMod.Text = "mod";
             this.btnMod.UseVisualStyleBackColor = true;
             // 
-            // btn2nd
-            // 
-            this.btn2nd.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btn2nd.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2nd.Location = new System.Drawing.Point(7, 162);
-            this.btn2nd.Margin = new System.Windows.Forms.Padding(1);
-            this.btn2nd.Name = "btn2nd";
-            this.btn2nd.Size = new System.Drawing.Size(57, 38);
-            this.btn2nd.TabIndex = 31;
-            this.btn2nd.Text = "2nd";
-            this.btn2nd.UseVisualStyleBackColor = false;
-            this.btn2nd.Click += new System.EventHandler(this.btn2nd_Click);
-            // 
             // btnPi
             // 
             this.btnPi.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPi.Location = new System.Drawing.Point(66, 162);
+            this.btnPi.Location = new System.Drawing.Point(7, 362);
             this.btnPi.Margin = new System.Windows.Forms.Padding(1);
             this.btnPi.Name = "btnPi";
             this.btnPi.Size = new System.Drawing.Size(57, 38);
@@ -454,7 +349,7 @@ namespace ScientificCalculator_OOP
             // btne
             // 
             this.btne.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btne.Location = new System.Drawing.Point(125, 162);
+            this.btne.Location = new System.Drawing.Point(125, 202);
             this.btne.Margin = new System.Windows.Forms.Padding(1);
             this.btne.Name = "btne";
             this.btne.Size = new System.Drawing.Size(57, 38);
@@ -465,7 +360,7 @@ namespace ScientificCalculator_OOP
             // btnCE
             // 
             this.btnCE.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCE.Location = new System.Drawing.Point(184, 162);
+            this.btnCE.Location = new System.Drawing.Point(184, 202);
             this.btnCE.Margin = new System.Windows.Forms.Padding(1);
             this.btnCE.Name = "btnCE";
             this.btnCE.Size = new System.Drawing.Size(57, 38);
@@ -477,7 +372,7 @@ namespace ScientificCalculator_OOP
             // btnClr
             // 
             this.btnClr.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClr.Location = new System.Drawing.Point(243, 162);
+            this.btnClr.Location = new System.Drawing.Point(243, 202);
             this.btnClr.Margin = new System.Windows.Forms.Padding(1);
             this.btnClr.Name = "btnClr";
             this.btnClr.Size = new System.Drawing.Size(57, 38);
@@ -485,88 +380,6 @@ namespace ScientificCalculator_OOP
             this.btnClr.Text = "←";
             this.btnClr.UseVisualStyleBackColor = true;
             this.btnClr.Click += new System.EventHandler(this.btnClr_Click);
-            // 
-            // btnMC
-            // 
-            this.btnMC.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnMC.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMC.Location = new System.Drawing.Point(7, 133);
-            this.btnMC.Margin = new System.Windows.Forms.Padding(1);
-            this.btnMC.Name = "btnMC";
-            this.btnMC.Size = new System.Drawing.Size(57, 27);
-            this.btnMC.TabIndex = 36;
-            this.btnMC.Text = "MC";
-            this.btnMC.UseVisualStyleBackColor = false;
-            // 
-            // btnMR
-            // 
-            this.btnMR.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnMR.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMR.Location = new System.Drawing.Point(66, 133);
-            this.btnMR.Margin = new System.Windows.Forms.Padding(1);
-            this.btnMR.Name = "btnMR";
-            this.btnMR.Size = new System.Drawing.Size(57, 27);
-            this.btnMR.TabIndex = 37;
-            this.btnMR.Text = "MR";
-            this.btnMR.UseVisualStyleBackColor = false;
-            // 
-            // btnMp
-            // 
-            this.btnMp.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnMp.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMp.Location = new System.Drawing.Point(125, 133);
-            this.btnMp.Margin = new System.Windows.Forms.Padding(1);
-            this.btnMp.Name = "btnMp";
-            this.btnMp.Size = new System.Drawing.Size(57, 27);
-            this.btnMp.TabIndex = 38;
-            this.btnMp.Text = "M+";
-            this.btnMp.UseVisualStyleBackColor = false;
-            // 
-            // btnMm
-            // 
-            this.btnMm.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnMm.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMm.Location = new System.Drawing.Point(184, 133);
-            this.btnMm.Margin = new System.Windows.Forms.Padding(1);
-            this.btnMm.Name = "btnMm";
-            this.btnMm.Size = new System.Drawing.Size(57, 27);
-            this.btnMm.TabIndex = 39;
-            this.btnMm.Text = "M-";
-            this.btnMm.UseVisualStyleBackColor = false;
-            // 
-            // btnMS
-            // 
-            this.btnMS.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnMS.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMS.Location = new System.Drawing.Point(243, 133);
-            this.btnMS.Margin = new System.Windows.Forms.Padding(1);
-            this.btnMS.Name = "btnMS";
-            this.btnMS.Size = new System.Drawing.Size(57, 27);
-            this.btnMS.TabIndex = 40;
-            this.btnMS.Text = "MS";
-            this.btnMS.UseVisualStyleBackColor = false;
-            // 
-            // btnDRG
-            // 
-            this.btnDRG.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDRG.Location = new System.Drawing.Point(7, 104);
-            this.btnDRG.Margin = new System.Windows.Forms.Padding(1);
-            this.btnDRG.Name = "btnDRG";
-            this.btnDRG.Size = new System.Drawing.Size(57, 27);
-            this.btnDRG.TabIndex = 41;
-            this.btnDRG.Text = "DEG";
-            this.btnDRG.UseVisualStyleBackColor = true;
-            // 
-            // btnFE
-            // 
-            this.btnFE.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFE.Location = new System.Drawing.Point(66, 104);
-            this.btnFE.Margin = new System.Windows.Forms.Padding(1);
-            this.btnFE.Name = "btnFE";
-            this.btnFE.Size = new System.Drawing.Size(57, 27);
-            this.btnFE.TabIndex = 42;
-            this.btnFE.Text = "F-E";
-            this.btnFE.UseVisualStyleBackColor = true;
             // 
             // btn7
             // 
@@ -579,21 +392,7 @@ namespace ScientificCalculator_OOP
             this.btn7.TabIndex = 0;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
-            this.btn7.Click += new System.EventHandler(this.btn7_Click);
-            // 
-            // txtbxDisplay
-            // 
-            this.txtbxDisplay.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtbxDisplay.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbxDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxDisplay.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtbxDisplay.Location = new System.Drawing.Point(7, 45);
-            this.txtbxDisplay.Multiline = true;
-            this.txtbxDisplay.Name = "txtbxDisplay";
-            this.txtbxDisplay.Size = new System.Drawing.Size(293, 55);
-            this.txtbxDisplay.TabIndex = 43;
-            this.txtbxDisplay.Text = "0";
-            this.txtbxDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn7.Click += new System.EventHandler(this.btnNumOP_Click);
             // 
             // LabelName
             // 
@@ -607,26 +406,62 @@ namespace ScientificCalculator_OOP
             this.LabelName.Text = "Scientific";
             this.LabelName.Click += new System.EventHandler(this.label1_Click);
             // 
+            // lblOP
+            // 
+            this.lblOP.AutoSize = true;
+            this.lblOP.Location = new System.Drawing.Point(132, 40);
+            this.lblOP.Name = "lblOP";
+            this.lblOP.Size = new System.Drawing.Size(0, 13);
+            this.lblOP.TabIndex = 45;
+            // 
+            // txtbxDisplay
+            // 
+            this.txtbxDisplay.Font = new System.Drawing.Font("DS-Digital", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxDisplay.Location = new System.Drawing.Point(7, 88);
+            this.txtbxDisplay.Multiline = true;
+            this.txtbxDisplay.Name = "txtbxDisplay";
+            this.txtbxDisplay.Size = new System.Drawing.Size(293, 37);
+            this.txtbxDisplay.TabIndex = 46;
+            this.txtbxDisplay.Text = "0";
+            this.txtbxDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // btnEqual
+            // 
+            this.btnEqual.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEqual.Location = new System.Drawing.Point(243, 403);
+            this.btnEqual.Margin = new System.Windows.Forms.Padding(1);
+            this.btnEqual.Name = "btnEqual";
+            this.btnEqual.Size = new System.Drawing.Size(57, 38);
+            this.btnEqual.TabIndex = 47;
+            this.btnEqual.Text = "=";
+            this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(7, 282);
+            this.button1.Margin = new System.Windows.Forms.Padding(1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 38);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "x^3";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(307, 446);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEqual);
+            this.Controls.Add(this.lblOP);
             this.Controls.Add(this.LabelName);
-            this.Controls.Add(this.txtbxDisplay);
-            this.Controls.Add(this.btnFE);
-            this.Controls.Add(this.btnDRG);
-            this.Controls.Add(this.btnMS);
-            this.Controls.Add(this.btnMm);
-            this.Controls.Add(this.btnMp);
-            this.Controls.Add(this.btnMR);
-            this.Controls.Add(this.btnMC);
             this.Controls.Add(this.btnClr);
             this.Controls.Add(this.btnCE);
             this.Controls.Add(this.btne);
             this.Controls.Add(this.btnPi);
-            this.Controls.Add(this.btn2nd);
             this.Controls.Add(this.btnMod);
             this.Controls.Add(this.btn1oX);
             this.Controls.Add(this.btnExp);
@@ -635,15 +470,8 @@ namespace ScientificCalculator_OOP
             this.Controls.Add(this.btnMul);
             this.Controls.Add(this.btnSub);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnEql);
-            this.Controls.Add(this.btnxY);
             this.Controls.Add(this.btn2SQ);
-            this.Controls.Add(this.btnPrnthsL);
-            this.Controls.Add(this.btnPrnthsR);
-            this.Controls.Add(this.btnNi);
             this.Controls.Add(this.btnDiv);
-            this.Controls.Add(this.btnLog);
-            this.Controls.Add(this.btn10x);
             this.Controls.Add(this.btnln);
             this.Controls.Add(this.btnDOT);
             this.Controls.Add(this.btnPosNeg);
@@ -657,9 +485,11 @@ namespace ScientificCalculator_OOP
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btn7);
+            this.Controls.Add(this.txtbxDisplay);
             this.Name = "Calculator";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Calculator_Load);
+            this.Click += new System.EventHandler(this.ArithOP_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -678,15 +508,8 @@ namespace ScientificCalculator_OOP
         private System.Windows.Forms.Button btnPosNeg;
         private System.Windows.Forms.Button btnDOT;
         private System.Windows.Forms.Button btnln;
-        private System.Windows.Forms.Button btn10x;
-        private System.Windows.Forms.Button btnLog;
         private System.Windows.Forms.Button btnDiv;
-        private System.Windows.Forms.Button btnNi;
-        private System.Windows.Forms.Button btnPrnthsR;
-        private System.Windows.Forms.Button btnPrnthsL;
         private System.Windows.Forms.Button btn2SQ;
-        private System.Windows.Forms.Button btnxY;
-        private System.Windows.Forms.Button btnEql;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnSub;
         private System.Windows.Forms.Button btnMul;
@@ -695,21 +518,16 @@ namespace ScientificCalculator_OOP
         private System.Windows.Forms.Button btnExp;
         private System.Windows.Forms.Button btn1oX;
         private System.Windows.Forms.Button btnMod;
-        private System.Windows.Forms.Button btn2nd;
         private System.Windows.Forms.Button btnPi;
         private System.Windows.Forms.Button btne;
         private System.Windows.Forms.Button btnCE;
         private System.Windows.Forms.Button btnClr;
-        private System.Windows.Forms.Button btnMC;
-        private System.Windows.Forms.Button btnMR;
-        private System.Windows.Forms.Button btnMp;
-        private System.Windows.Forms.Button btnMm;
-        private System.Windows.Forms.Button btnMS;
-        private System.Windows.Forms.Button btnDRG;
-        private System.Windows.Forms.Button btnFE;
         private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.TextBox txtbxDisplay;
         private System.Windows.Forms.Label LabelName;
+        private System.Windows.Forms.Label lblOP;
+        private System.Windows.Forms.TextBox txtbxDisplay;
+        private System.Windows.Forms.Button btnEqual;
+        private System.Windows.Forms.Button button1;
     }
 }
 

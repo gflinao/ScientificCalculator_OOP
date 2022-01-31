@@ -12,90 +12,19 @@ namespace ScientificCalculator_OOP
 {
     public partial class Calculator : Form
     {
-        double result;
 
         public Calculator()
         {
             InitializeComponent();
         }
 
-        float num1, ans;
-        int count;
+        Double result = 0;
+        String operation = "";
+        bool enter_value = false;
 
         private void Calculator_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void btn3_Click(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + "3";
-
-            txtbxDisplay.Text = txtbxDisplay.Text + 3;
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + "4";
-        }
-
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + "7";
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + "8";        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + "9";
-        }
-
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + "6";
-        }
-
-        private void btn2_Click(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + "2";
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -108,45 +37,6 @@ namespace ScientificCalculator_OOP
 
         }
 
-        private void btnDOT_Click(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + ".";
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + "(";
-        }
-
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + ")";
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -158,52 +48,12 @@ namespace ScientificCalculator_OOP
 
         }
 
-        private void btn5_Click(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + "5";
-        }
-
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + "1";
-        }
-
-        private void btn0_Click(object sender, EventArgs e)
-        {
-            if (txtbxDisplay.Text == "0")
-            {
-                txtbxDisplay.Text = "";
-            }
-
-            txtbxDisplay.Text = txtbxDisplay.Text + "0";
-        }
-
         private void btn2nd_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnMul_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnln_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnEql_Click(object sender, EventArgs e)
         {
 
         }
@@ -222,18 +72,19 @@ namespace ScientificCalculator_OOP
         private void btnCE_Click(object sender, EventArgs e)
         {
             txtbxDisplay.Text = "0";
+            lblOP.Text = "";
         }
 
         private void btnPosNeg_Click(object sender, EventArgs e)
         {
-            result = double.Parse(txtbxDisplay.Text);
+            result = Double.Parse(txtbxDisplay.Text);
             result = result * -1;
             txtbxDisplay.Text = result.ToString();
         }
 
         private void btnXr2_Click(object sender, EventArgs e)
         {
-            result = double.Parse(txtbxDisplay.Text);
+            result = Double.Parse(txtbxDisplay.Text);
             result = Math.Pow(result, 2);
             txtbxDisplay.Text = result.ToString();
         }
@@ -244,9 +95,51 @@ namespace ScientificCalculator_OOP
             txtbxDisplay.Text = result.ToString();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void ArithOP_Click(object sender, EventArgs e)
         {
-             
+            Button num = (Button)sender;
+            operation = num.Text;
+            result = Double.Parse(txtbxDisplay.Text);
+            txtbxDisplay.Text = "";
+            lblOP.Text = System.Convert.ToString(result) + " " + operation;
+        }
+
+        private void btnNumOP_Click(object sender, EventArgs e)
+        {
+            if ((txtbxDisplay.Text == "0") || (enter_value)) txtbxDisplay.Text = "";
+            enter_value = false;
+
+            Button num = (Button)sender;
+            if (num.Text == ".")
+            {
+                if (!txtbxDisplay.Text.Contains("."))
+                    txtbxDisplay.Text = txtbxDisplay.Text + num.Text;
+            }
+            else
+                txtbxDisplay.Text = txtbxDisplay.Text + num.Text;
+        }
+
+        private void btnEqual_Click(object sender, EventArgs e)
+        {
+            switch (operation)
+            {
+                case "+":
+                    txtbxDisplay.Text = (result + Double.Parse(txtbxDisplay.Text)).ToString();
+                    break;
+
+                case "-":
+                    txtbxDisplay.Text = (result - Double.Parse(txtbxDisplay.Text)).ToString();
+                    break;
+
+                case "*":
+                    txtbxDisplay.Text = (result * Double.Parse(txtbxDisplay.Text)).ToString();
+                    break;
+
+                case "/":
+                    txtbxDisplay.Text = (result / Double.Parse(txtbxDisplay.Text)).ToString();
+                    break;
+
+            }
         }
     }
 }
