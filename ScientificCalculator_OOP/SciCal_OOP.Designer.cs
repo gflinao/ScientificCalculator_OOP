@@ -56,11 +56,11 @@ namespace ScientificCalculator_OOP
             this.btnLn = new System.Windows.Forms.Button();
             this.btnExp = new System.Windows.Forms.Button();
             this.btnx3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnOff = new System.Windows.Forms.Button();
+            this.btn2nd = new System.Windows.Forms.Button();
+            this.btnTan = new System.Windows.Forms.Button();
+            this.btnSin = new System.Windows.Forms.Button();
+            this.btnCos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDot
@@ -359,55 +359,58 @@ namespace ScientificCalculator_OOP
             this.btnx3.UseVisualStyleBackColor = true;
             this.btnx3.Click += new System.EventHandler(this.btnx3_Click);
             // 
-            // button5
+            // btnOff
             // 
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(12, 164);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(48, 25);
-            this.button5.TabIndex = 31;
-            this.button5.Text = "Cos";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnOff.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOff.Location = new System.Drawing.Point(228, 164);
+            this.btnOff.Name = "btnOff";
+            this.btnOff.Size = new System.Drawing.Size(48, 25);
+            this.btnOff.TabIndex = 32;
+            this.btnOff.Text = "OFF";
+            this.btnOff.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn2nd
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(228, 164);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 25);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "OFF";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn2nd.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2nd.Location = new System.Drawing.Point(174, 164);
+            this.btn2nd.Name = "btn2nd";
+            this.btn2nd.Size = new System.Drawing.Size(48, 25);
+            this.btn2nd.TabIndex = 33;
+            this.btn2nd.Text = " 2nd";
+            this.btn2nd.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnTan
             // 
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(174, 164);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(48, 25);
-            this.button2.TabIndex = 33;
-            this.button2.Text = " 2nd";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnTan.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTan.Location = new System.Drawing.Point(120, 164);
+            this.btnTan.Name = "btnTan";
+            this.btnTan.Size = new System.Drawing.Size(48, 25);
+            this.btnTan.TabIndex = 34;
+            this.btnTan.Text = "Tan";
+            this.btnTan.UseVisualStyleBackColor = true;
+            this.btnTan.Click += new System.EventHandler(this.btnTan_Click);
             // 
-            // button3
+            // btnSin
             // 
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(120, 164);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(48, 25);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "Tan";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSin.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSin.Location = new System.Drawing.Point(66, 164);
+            this.btnSin.Name = "btnSin";
+            this.btnSin.Size = new System.Drawing.Size(48, 25);
+            this.btnSin.TabIndex = 35;
+            this.btnSin.Text = "Sin";
+            this.btnSin.UseVisualStyleBackColor = true;
+            this.btnSin.Click += new System.EventHandler(this.btnSin_Click);
             // 
-            // button4
+            // btnCos
             // 
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(66, 164);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(48, 25);
-            this.button4.TabIndex = 35;
-            this.button4.Text = "Sin";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnCos.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCos.Location = new System.Drawing.Point(12, 164);
+            this.btnCos.Name = "btnCos";
+            this.btnCos.Size = new System.Drawing.Size(48, 25);
+            this.btnCos.TabIndex = 36;
+            this.btnCos.Text = "Cos";
+            this.btnCos.UseVisualStyleBackColor = true;
+            this.btnCos.Click += new System.EventHandler(this.btnCos_Click);
             // 
             // Calculator
             // 
@@ -415,11 +418,11 @@ namespace ScientificCalculator_OOP
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(288, 446);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnCos);
+            this.Controls.Add(this.btnSin);
+            this.Controls.Add(this.btnTan);
+            this.Controls.Add(this.btn2nd);
+            this.Controls.Add(this.btnOff);
             this.Controls.Add(this.btnx3);
             this.Controls.Add(this.btnExp);
             this.Controls.Add(this.btnLn);
@@ -485,11 +488,11 @@ namespace ScientificCalculator_OOP
         private System.Windows.Forms.Button btnLn;
         private System.Windows.Forms.Button btnExp;
         private System.Windows.Forms.Button btnx3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnOff;
+        private System.Windows.Forms.Button btn2nd;
+        private System.Windows.Forms.Button btnTan;
+        private System.Windows.Forms.Button btnSin;
+        private System.Windows.Forms.Button btnCos;
     }
 }
 

@@ -136,5 +136,26 @@ namespace ScientificCalculator_OOP
             result = Math.Pow(result, 3);
             txtbxDisplay.Text = result.ToString();
         }
+
+        private void btnCos_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(txtbxDisplay.Text);
+            result = Math.Cos(result);
+            txtbxDisplay.Text = result.ToString();
+        }
+
+        private void btnSin_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(txtbxDisplay.Text);
+            result = Math.Sin(result);
+            txtbxDisplay.Text = result.ToString();
+        }
+
+        private void btnTan_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(txtbxDisplay.Text);
+            result = Math.Tan(result);
+            txtbxDisplay.Text = result.ToString();
+        }
     }
 }
