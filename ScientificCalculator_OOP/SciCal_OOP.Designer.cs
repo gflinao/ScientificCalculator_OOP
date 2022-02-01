@@ -57,10 +57,13 @@ namespace ScientificCalculator_OOP
             this.btnExp = new System.Windows.Forms.Button();
             this.btnx3 = new System.Windows.Forms.Button();
             this.btnOff = new System.Windows.Forms.Button();
-            this.btn2nd = new System.Windows.Forms.Button();
+            this.btnSqrt = new System.Windows.Forms.Button();
             this.btnTan = new System.Windows.Forms.Button();
             this.btnSin = new System.Windows.Forms.Button();
             this.btnCos = new System.Windows.Forms.Button();
+            this.btnCosh = new System.Windows.Forms.Button();
+            this.btnSinh = new System.Windows.Forms.Button();
+            this.btnTanh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDot
@@ -369,15 +372,16 @@ namespace ScientificCalculator_OOP
             this.btnOff.Text = "OFF";
             this.btnOff.UseVisualStyleBackColor = true;
             // 
-            // btn2nd
+            // btnSqrt
             // 
-            this.btn2nd.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2nd.Location = new System.Drawing.Point(174, 164);
-            this.btn2nd.Name = "btn2nd";
-            this.btn2nd.Size = new System.Drawing.Size(48, 25);
-            this.btn2nd.TabIndex = 33;
-            this.btn2nd.Text = " 2nd";
-            this.btn2nd.UseVisualStyleBackColor = true;
+            this.btnSqrt.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSqrt.Location = new System.Drawing.Point(174, 164);
+            this.btnSqrt.Name = "btnSqrt";
+            this.btnSqrt.Size = new System.Drawing.Size(48, 25);
+            this.btnSqrt.TabIndex = 33;
+            this.btnSqrt.Text = "√";
+            this.btnSqrt.UseVisualStyleBackColor = true;
+            this.btnSqrt.Click += new System.EventHandler(this.btnSqrt_Click);
             // 
             // btnTan
             // 
@@ -412,16 +416,52 @@ namespace ScientificCalculator_OOP
             this.btnCos.UseVisualStyleBackColor = true;
             this.btnCos.Click += new System.EventHandler(this.btnCos_Click);
             // 
+            // btnCosh
+            // 
+            this.btnCosh.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCosh.Location = new System.Drawing.Point(12, 133);
+            this.btnCosh.Name = "btnCosh";
+            this.btnCosh.Size = new System.Drawing.Size(48, 25);
+            this.btnCosh.TabIndex = 39;
+            this.btnCosh.Text = "Cosh";
+            this.btnCosh.UseVisualStyleBackColor = true;
+            this.btnCosh.Click += new System.EventHandler(this.btnCosh_Click);
+            // 
+            // btnSinh
+            // 
+            this.btnSinh.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSinh.Location = new System.Drawing.Point(66, 133);
+            this.btnSinh.Name = "btnSinh";
+            this.btnSinh.Size = new System.Drawing.Size(48, 25);
+            this.btnSinh.TabIndex = 40;
+            this.btnSinh.Text = "Sinh";
+            this.btnSinh.UseVisualStyleBackColor = true;
+            this.btnSinh.Click += new System.EventHandler(this.btnSinh_Click);
+            // 
+            // btnTanh
+            // 
+            this.btnTanh.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTanh.Location = new System.Drawing.Point(120, 133);
+            this.btnTanh.Name = "btnTanh";
+            this.btnTanh.Size = new System.Drawing.Size(48, 25);
+            this.btnTanh.TabIndex = 41;
+            this.btnTanh.Text = "Tanh";
+            this.btnTanh.UseVisualStyleBackColor = true;
+            this.btnTanh.Click += new System.EventHandler(this.btnTanh_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(288, 446);
+            this.Controls.Add(this.btnTanh);
+            this.Controls.Add(this.btnSinh);
+            this.Controls.Add(this.btnCosh);
             this.Controls.Add(this.btnCos);
             this.Controls.Add(this.btnSin);
             this.Controls.Add(this.btnTan);
-            this.Controls.Add(this.btn2nd);
+            this.Controls.Add(this.btnSqrt);
             this.Controls.Add(this.btnOff);
             this.Controls.Add(this.btnx3);
             this.Controls.Add(this.btnExp);
@@ -489,10 +529,13 @@ namespace ScientificCalculator_OOP
         private System.Windows.Forms.Button btnExp;
         private System.Windows.Forms.Button btnx3;
         private System.Windows.Forms.Button btnOff;
-        private System.Windows.Forms.Button btn2nd;
+        private System.Windows.Forms.Button btnSqrt;
         private System.Windows.Forms.Button btnTan;
         private System.Windows.Forms.Button btnSin;
         private System.Windows.Forms.Button btnCos;
+        private System.Windows.Forms.Button btnCosh;
+        private System.Windows.Forms.Button btnSinh;
+        private System.Windows.Forms.Button btnTanh;
     }
 }
 

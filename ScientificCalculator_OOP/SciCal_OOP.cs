@@ -106,6 +106,7 @@ namespace ScientificCalculator_OOP
         {
             result = double.Parse(txtbxDisplay.Text);
             result = (result % double.Parse(txtbxDisplay.Text));
+
             txtbxDisplay.Text = result.ToString();
         }
 
@@ -113,6 +114,7 @@ namespace ScientificCalculator_OOP
         {
             result = double.Parse(txtbxDisplay.Text);
             result = Math.Log(result);
+
             txtbxDisplay.Text = result.ToString();
         }
 
@@ -120,6 +122,7 @@ namespace ScientificCalculator_OOP
         {
             result = double.Parse(txtbxDisplay.Text);
             result = Math.Exp(result);
+
             txtbxDisplay.Text = result.ToString();
         }
 
@@ -127,6 +130,7 @@ namespace ScientificCalculator_OOP
         {
             result = double.Parse(txtbxDisplay.Text);
             result = Math.Pow(result, 2);
+
             txtbxDisplay.Text = result.ToString();
         }
 
@@ -134,6 +138,7 @@ namespace ScientificCalculator_OOP
         {
             result = double.Parse(txtbxDisplay.Text);
             result = Math.Pow(result, 3);
+
             txtbxDisplay.Text = result.ToString();
         }
 
@@ -141,6 +146,7 @@ namespace ScientificCalculator_OOP
         {
             result = double.Parse(txtbxDisplay.Text);
             result = Math.Cos(result);
+
             txtbxDisplay.Text = result.ToString();
         }
 
@@ -148,6 +154,7 @@ namespace ScientificCalculator_OOP
         {
             result = double.Parse(txtbxDisplay.Text);
             result = Math.Sin(result);
+
             txtbxDisplay.Text = result.ToString();
         }
 
@@ -155,6 +162,39 @@ namespace ScientificCalculator_OOP
         {
             result = double.Parse(txtbxDisplay.Text);
             result = Math.Tan(result);
+
+            txtbxDisplay.Text = result.ToString();
+        }
+
+        private void btnSqrt_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(txtbxDisplay.Text);
+            result = Math.Sqrt(result);
+
+            txtbxDisplay.Text = result.ToString();
+        }
+
+        private void btnCosh_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(txtbxDisplay.Text);
+            result = Math.Cosh(result);
+
+            txtbxDisplay.Text = result.ToString();
+        }
+
+        private void btnSinh_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(txtbxDisplay.Text);
+            result = Math.Sinh(result);
+
+            txtbxDisplay.Text = result.ToString();
+        }
+
+        private void btnTanh_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(txtbxDisplay.Text);
+            result = Math.Tanh(result);
+
             txtbxDisplay.Text = result.ToString();
         }
     }
