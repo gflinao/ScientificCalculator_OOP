@@ -197,5 +197,20 @@ namespace ScientificCalculator_OOP
 
             txtbxDisplay.Text = result.ToString();
         }
+
+        private void btnLog_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(txtbxDisplay.Text);
+            result = Math.Log10(result);
+
+            txtbxDisplay.Text = result.ToString();
+        }
+
+        private void btnPctg_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(txtbxDisplay.Text);
+            result = result / 100;
+            txtbxDisplay.Text = result.ToString();
+        }
     }
 }

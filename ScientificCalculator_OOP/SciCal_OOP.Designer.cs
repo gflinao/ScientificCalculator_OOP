@@ -64,6 +64,8 @@ namespace ScientificCalculator_OOP
             this.btnCosh = new System.Windows.Forms.Button();
             this.btnSinh = new System.Windows.Forms.Button();
             this.btnTanh = new System.Windows.Forms.Button();
+            this.btnPctg = new System.Windows.Forms.Button();
+            this.btnLog = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDot
@@ -331,12 +333,12 @@ namespace ScientificCalculator_OOP
             // 
             // btnLn
             // 
-            this.btnLn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLn.Location = new System.Drawing.Point(12, 293);
             this.btnLn.Name = "btnLn";
             this.btnLn.Size = new System.Drawing.Size(48, 43);
             this.btnLn.TabIndex = 24;
-            this.btnLn.Text = "ln";
+            this.btnLn.Text = "ln (x)";
             this.btnLn.UseVisualStyleBackColor = true;
             this.btnLn.Click += new System.EventHandler(this.btnLn_Click);
             // 
@@ -449,12 +451,36 @@ namespace ScientificCalculator_OOP
             this.btnTanh.UseVisualStyleBackColor = true;
             this.btnTanh.Click += new System.EventHandler(this.btnTanh_Click);
             // 
+            // btnPctg
+            // 
+            this.btnPctg.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPctg.Location = new System.Drawing.Point(228, 133);
+            this.btnPctg.Name = "btnPctg";
+            this.btnPctg.Size = new System.Drawing.Size(48, 25);
+            this.btnPctg.TabIndex = 42;
+            this.btnPctg.Text = "%";
+            this.btnPctg.UseVisualStyleBackColor = true;
+            this.btnPctg.Click += new System.EventHandler(this.btnPctg_Click);
+            // 
+            // btnLog
+            // 
+            this.btnLog.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLog.Location = new System.Drawing.Point(174, 133);
+            this.btnLog.Name = "btnLog";
+            this.btnLog.Size = new System.Drawing.Size(48, 25);
+            this.btnLog.TabIndex = 43;
+            this.btnLog.Text = "Log";
+            this.btnLog.UseVisualStyleBackColor = true;
+            this.btnLog.Click += new System.EventHandler(this.btnLog_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(288, 446);
+            this.Controls.Add(this.btnLog);
+            this.Controls.Add(this.btnPctg);
             this.Controls.Add(this.btnTanh);
             this.Controls.Add(this.btnSinh);
             this.Controls.Add(this.btnCosh);
@@ -536,6 +562,8 @@ namespace ScientificCalculator_OOP
         private System.Windows.Forms.Button btnCosh;
         private System.Windows.Forms.Button btnSinh;
         private System.Windows.Forms.Button btnTanh;
+        private System.Windows.Forms.Button btnPctg;
+        private System.Windows.Forms.Button btnLog;
     }
 }
 
