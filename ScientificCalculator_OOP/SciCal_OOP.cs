@@ -212,5 +212,10 @@ namespace ScientificCalculator_OOP
             result = result / 100;
             txtbxDisplay.Text = result.ToString();
         }
+
+        private void btnOff_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
