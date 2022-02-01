@@ -313,6 +313,7 @@ namespace ScientificCalculator_OOP
             this.btnx2.TabIndex = 22;
             this.btnx2.Text = "x²\t";
             this.btnx2.UseVisualStyleBackColor = true;
+            this.btnx2.Click += new System.EventHandler(this.btnx2_Click);
             // 
             // btnPi
             // 
@@ -345,6 +346,7 @@ namespace ScientificCalculator_OOP
             this.btnExp.TabIndex = 25;
             this.btnExp.Text = "Exp";
             this.btnExp.UseVisualStyleBackColor = true;
+            this.btnExp.Click += new System.EventHandler(this.btnExp_Click);
             // 
             // btnx3
             // 
@@ -355,6 +357,7 @@ namespace ScientificCalculator_OOP
             this.btnx3.TabIndex = 26;
             this.btnx3.Text = "x³";
             this.btnx3.UseVisualStyleBackColor = true;
+            this.btnx3.Click += new System.EventHandler(this.btnx3_Click);
             // 
             // button5
             // 
