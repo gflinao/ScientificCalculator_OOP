@@ -285,7 +285,7 @@ namespace ScientificCalculator_OOP
             this.txtbxDisplay.Location = new System.Drawing.Point(12, 51);
             this.txtbxDisplay.Multiline = true;
             this.txtbxDisplay.Name = "txtbxDisplay";
-            this.txtbxDisplay.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtbxDisplay.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.txtbxDisplay.Size = new System.Drawing.Size(264, 76);
             this.txtbxDisplay.TabIndex = 17;
             this.txtbxDisplay.Text = "0";
