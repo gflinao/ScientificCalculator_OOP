@@ -29,6 +29,7 @@ namespace ScientificCalculator_OOP
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             this.btnDot = new System.Windows.Forms.Button();
             this.btnEq = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -66,6 +67,8 @@ namespace ScientificCalculator_OOP
             this.btnTanh = new System.Windows.Forms.Button();
             this.btnPctg = new System.Windows.Forms.Button();
             this.btnLog = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnDot
@@ -533,12 +536,36 @@ namespace ScientificCalculator_OOP
             this.btnLog.UseVisualStyleBackColor = false;
             this.btnLog.Click += new System.EventHandler(this.btnLog_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label1.Location = new System.Drawing.Point(13, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 23);
+            this.label1.TabIndex = 44;
+            this.label1.Text = "KASYO";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label2.Location = new System.Drawing.Point(83, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 16);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "Kalkulator";
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(288, 446);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLog);
             this.Controls.Add(this.btnPctg);
             this.Controls.Add(this.btnTanh);
@@ -576,8 +603,9 @@ namespace ScientificCalculator_OOP
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEq);
             this.Controls.Add(this.btnDot);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calculator";
-            this.Text = "Form1";
+            this.Text = "Kasyo Kalkulator";
             this.Load += new System.EventHandler(this.Calculator_Load);
             this.Click += new System.EventHandler(this.btn_NumOP);
             this.ResumeLayout(false);
@@ -624,6 +652,8 @@ namespace ScientificCalculator_OOP
         private System.Windows.Forms.Button btnTanh;
         private System.Windows.Forms.Button btnPctg;
         private System.Windows.Forms.Button btnLog;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
